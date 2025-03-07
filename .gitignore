@@ -36,3 +36,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 tfplan
+pictures/IMG_0202.jpg
+pictures/Network Diagram.jpg
+stop/*
