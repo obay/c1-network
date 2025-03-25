@@ -1,11 +1,11 @@
 resource "azurerm_network_security_rule" "allow_ssh_security_rule" {
-  name                        = "allow-ssh"
+  name                        = "allow-all"
   priority                    = 100
   direction                   = "Inbound"
   access                      = "Allow"
-  protocol                    = "Tcp"
+  protocol                    = "*"
   source_port_range           = "*"
-  destination_port_range      = "22"
+  destination_port_range      = "*"
   source_address_prefix       = "*"
   destination_address_prefix  = "*"
   resource_group_name         = var.resource_group_name
