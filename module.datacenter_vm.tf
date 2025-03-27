@@ -5,5 +5,5 @@ module "datacenter_vm" {
   linux_vm_name           = "datacenter-vm"
   linux_vm_size           = "Standard_B1s"
   linux_vm_admin_username = "obay"
-  subnet_id               = azurerm_subnet.subnet_datacenter.id
+  subnet_id               = azurerm_subnet.datacenter.id
 }

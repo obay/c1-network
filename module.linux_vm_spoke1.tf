@@ -5,5 +5,5 @@ module "linux_vm_spoke1" {
   linux_vm_name           = "spoke1-vm"
   linux_vm_size           = "Standard_B1s"
   linux_vm_admin_username = "obay"
-  subnet_id               = azurerm_subnet.subnet_spoke1.id
+  subnet_id               = azurerm_subnet.spoke1.id
 }

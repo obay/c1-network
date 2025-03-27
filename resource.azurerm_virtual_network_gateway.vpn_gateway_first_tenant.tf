@@ -11,6 +11,6 @@ resource "azurerm_virtual_network_gateway" "vpn_gateway_first_tenant" {
     name                          = "vnetGatewayConfig"
     public_ip_address_id          = azurerm_public_ip.vpn_gateway_ip_first_tenant.id
     private_ip_address_allocation = "Dynamic"
-    subnet_id                     = azurerm_subnet.subnet_first_tenant_vpn_gateway.id
+    subnet_id                     = azurerm_subnet.first_tenant_vpn_gateway.id
   }
 }
